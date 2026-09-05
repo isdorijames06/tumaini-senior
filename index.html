@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Tumaini Senior Secondary School - Official school website. Get school information, academics, notices, gallery and contact details.">
-
 <title>Tumaini Senior Secondary School</title>
 
 <!-- Google Fonts -->
@@ -13,11 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* =========================================================
-   GENERAL
-========================================================= */
-
 :root {
     --blue: #3e8fc2;
     --blue-dark: #176b9c;
@@ -29,7 +24,6 @@
     --yellow-soft: #fdebb0;
     --danger: #b3261e;
     --green: #1e7a35;
-
     --radius: 8px;
     --serif: "Fraunces", Georgia, serif;
     --sans: "Inter", Arial, sans-serif;
@@ -89,11 +83,7 @@ button {
     display: block;
 }
 
-
-/* =========================================================
-   HEADER
-========================================================= */
-
+/* HEADER */
 header {
     position: sticky;
     top: 0;
@@ -106,7 +96,6 @@ header {
     max-width: 1080px;
     margin: auto;
     padding: 14px 24px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -197,11 +186,7 @@ nav a.active {
     top: 8px;
 }
 
-
-/* =========================================================
-   HERO
-========================================================= */
-
+/* HERO */
 .hero {
     background: var(--sky);
     border-bottom: 1px solid var(--sky-line);
@@ -211,7 +196,6 @@ nav a.active {
     max-width: 1080px;
     margin: auto;
     padding: 70px 24px 60px;
-
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     gap: 45px;
@@ -233,7 +217,7 @@ nav a.active {
 
 .eyebrow-line span {
     font-size: 0.85rem;
-    color: var(--blue-dark);
+    color: black;
     font-weight: 700;
 }
 
@@ -256,11 +240,7 @@ nav a.active {
     gap: 14px;
 }
 
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
+/* BUTTONS */
 .btn {
     display: inline-block;
     padding: 12px 22px;
@@ -300,11 +280,7 @@ nav a.active {
     color: #14324a;
 }
 
-
-/* =========================================================
-   HERO PANEL
-========================================================= */
-
+/* HERO PANEL */
 .hero-panel {
     background: rgb(16, 180, 250);
     border-radius: var(--radius);
@@ -326,7 +302,7 @@ nav a.active {
 }
 
 .hero-panel h3 {
-    color: white;
+    color: rgb(9, 9, 9);
     font-size: 1rem;
     margin-bottom: 18px;
 }
@@ -342,7 +318,7 @@ nav a.active {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .stat-item:last-child {
@@ -360,20 +336,16 @@ nav a.active {
     color: #ffff4c;
 }
 
-
-/* =========================================================
-   SECTIONS
-========================================================= */
-
+/* SECTIONS */
 section.block {
     padding: 65px 0;
     background-image:
-        linear-gradient(rgba(255,255,255,0.90), rgba(255,255,255,0.90)),
+        linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)),
         url("Imge.webp");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-
 section.block.tint {
     background: var(--sky);
 }
@@ -390,14 +362,10 @@ section.block.tint {
 }
 
 .section-head p {
-    color: #2f5065;
+    color: #070707;
 }
 
-
-/* =========================================================
-   CARDS
-========================================================= */
-
+/* CARDS */
 .program-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -409,31 +377,27 @@ section.block.tint {
     border: 1px solid var(--sky-line);
     border-radius: var(--radius);
     padding: 24px;
-    border-top: 4px solid var(--blue);
+    border-top: 4px solid rgb(0, 179, 255);
     transition: 0.2s;
 }
 
 .program-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .program-card h3 {
-    color: var(--blue-dark);
+    color:rgb(0, 179, 255) ;
     font-size: 1.05rem;
     margin-bottom: 8px;
 }
 
 .program-card p {
     font-size: 0.92rem;
-    color: #456478;
+    color: #0a0b0b;
 }
 
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
+/* ABOUT */
 .about-grid {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -467,11 +431,7 @@ section.block.tint {
     font-weight: 700;
 }
 
-
-/* =========================================================
-   NOTICES
-========================================================= */
-
+/* NOTICES */
 .notice-list {
     display: flex;
     flex-direction: column;
@@ -513,11 +473,7 @@ section.block.tint {
     margin-bottom: 6px;
 }
 
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
+/* GALLERY */
 .gallery-section {
     padding: 65px 0;
     background: var(--sky);
@@ -534,7 +490,7 @@ section.block.tint {
     border-radius: 12px;
     background: white;
     border: 1px solid #d8eef9;
-    box-shadow: 0 8px 24px rgba(62,143,194,0.12);
+    box-shadow: 0 8px 24px rgba(62, 143, 194, 0.12);
     transition: 0.25s;
 }
 
@@ -555,11 +511,7 @@ section.block.tint {
     background: #f5fbff;
 }
 
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
+/* CONTACT */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -622,11 +574,7 @@ textarea {
     min-height: 110px;
 }
 
-
-/* =========================================================
-   ADMIN
-========================================================= */
-
+/* ADMIN */
 .admin-wrap {
     background: var(--sky);
     min-height: 70vh;
@@ -671,7 +619,7 @@ textarea {
 
 .dash-stats {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-bottom: 32px;
 }
@@ -710,7 +658,7 @@ textarea {
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
@@ -799,17 +747,12 @@ tbody tr:hover {
     color: #5b7d90;
 }
 
-
-/* =========================================================
-   MODAL
-========================================================= */
-
+/* MODAL */
 .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(20,50,74,0.45);
+    background: rgba(20, 50, 74, 0.45);
     z-index: 2000;
-
     display: none;
     align-items: center;
     justify-content: center;
@@ -844,13 +787,9 @@ tbody tr:hover {
     gap: 10px;
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
+/* FOOTER */
 footer {
-    background: rgb(16,180,250);
+    background: rgb(16, 180, 250);
     color: #0a0b0b;
     padding: 40px 0 24px;
 }
@@ -884,7 +823,7 @@ footer a:hover {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     padding-top: 18px;
     display: flex;
     justify-content: space-between;
@@ -893,23 +832,15 @@ footer a:hover {
     font-size: 0.82rem;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
+/* RESPONSIVE */
 @media (max-width: 860px) {
-
     .hero-grid,
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .program-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
+    .program-grid,
     .school-gallery {
         grid-template-columns: 1fr 1fr;
     }
@@ -918,18 +849,13 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .form-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
+    .form-grid,
     .dash-stats {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-
 @media (max-width: 620px) {
-
     .header-row {
         padding: 12px 18px;
     }
@@ -1003,2031 +929,1047 @@ footer a:hover {
         min-width: 750px;
     }
 }
-
 </style>
 </head>
 
-
 <body>
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
+<!-- HEADER -->
 <header>
-
-<div class="header-row">
-
-    <a href="#" class="brand" data-nav="home">
-
-        <div class="brand-mark">
-            <img src="images.jpg" alt="Tumaini School Logo" class="brand-icon">
-        </div>
-
-        <div>
-            <div class="brand-name">
-                Tumaini Senior Secondary School
+    <div class="header-row">
+        <a href="#" class="brand" data-nav="home">
+            <div class="brand-mark">
+                <img src="images.jpg" alt="Tumaini School Logo" class="brand-icon">
             </div>
 
-            <div class="brand-sub">
-                Makuyuni-Arusha · Form One to Form Six
+            <div>
+                <div class="brand-name">Tumaini Senior Secondary School</div>
+                <div class="brand-sub">Makuyuni-Arusha · Form One to Form Six</div>
             </div>
-        </div>
+        </a>
 
-    </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+        </button>
 
-
-    <button
-        class="nav-toggle"
-        id="navToggle"
-        aria-label="Toggle menu"
-        aria-expanded="false">
-
-        <span></span>
-
-    </button>
-
-
-    <nav id="mainNav">
-
-        <ul>
-
-            <li>
-                <a href="#" data-nav="home" class="active">
-                    Home
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="about">
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="academics">
-                    Academics
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="notices">
-                    Notices
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="gallery">
-                    Gallery
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="contact">
-                    Contact
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="admin">
-                    <strong>Admin</strong>
-                </a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</div>
-
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#" data-nav="home" class="active">Home</a></li>
+                <li><a href="#" data-nav="about">About</a></li>
+                <li><a href="#" data-nav="academics">Academics</a></li>
+                <li><a href="#" data-nav="notices">Notices</a></li>
+                <li><a href="#" data-nav="gallery">Gallery</a></li>
+                <li><a href="#" data-nav="contact">Contact</a></li>
+                <li><a href="#" data-nav="admin"><strong>Admin</strong></a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-
-
-<!-- =========================================================
-     HOME
-========================================================= -->
-
+<!-- HOME -->
 <main id="page-home" class="page visible">
+    <section class="hero">
+        <div class="hero-grid">
+            <div>
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>Admissions open for 2027 intake</span>
+                </div>
 
-<section class="hero">
+                <h1>A school built around discipline, curiosity, and results.</h1>
 
-<div class="hero-grid">
+                <p class="lead">
+                    Tumaini Senior Secondary School prepares Form One to Form Six
+                    students for national examinations and life beyond them,
+                    through focused teaching, strong pastoral care, and a campus
+                    where every student is known by name.
+                </p>
 
-    <div>
-
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>Admissions open for 2027 intake</span>
-        </div>
-
-
-        <h1>
-            A school built around discipline, curiosity, and results.
-        </h1>
-
-
-        <p class="lead">
-            Tumaini Senior Secondary School prepares Form One to Form Six
-            students for national examinations and life beyond them,
-            through focused teaching, strong pastoral care, and a campus
-            where every student is known by name.
-        </p>
-
-
-        <div class="cta-row">
-
-            <a
-                href="#"
-                class="btn btn-primary"
-                data-nav="contact">
-                Apply for admission
-            </a>
-
-            <a
-                href="#"
-                class="btn btn-ghost"
-                data-nav="academics">
-                View academic programmes
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="hero-panel">
-
-        <h3>Tumaini at a glance</h3>
-
-        <div class="stat-list">
-
-            <div class="stat-item">
-                <span class="stat-label">
-                    Students enrolled
-                </span>
-                <span class="stat-num">842</span>
+                <div class="cta-row">
+                    <a href="#" class="btn btn-primary" data-nav="contact">Apply for admission</a>
+                    <a href="#" class="btn btn-ghost" data-nav="academics">View academic programmes</a>
+                </div>
             </div>
 
-            <div class="stat-item">
-                <span class="stat-label">
-                    Form Six pass rate, 2025
-                </span>
-                <span class="stat-num">96%</span>
+            <div class="hero-panel">
+                <h3>Tumaini at a glance</h3>
+
+                <div class="stat-list">
+                    <div class="stat-item">
+                        <span class="stat-label">Students enrolled</span>
+                        <span class="stat-num">842</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Form Six pass rate, 2025</span>
+                        <span class="stat-num">96%</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Teaching staff</span>
+                        <span class="stat-num">54</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Years of operation</span>
+                        <span class="stat-num">27</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span class="why">Why families choose Tumaini</span>
+                </div>
+
+                <h2>Small classes, clear expectations, real accountability.</h2>
             </div>
 
-            <div class="stat-item">
-                <span class="stat-label">
-                    Teaching staff
-                </span>
-                <span class="stat-num">54</span>
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>Low student-to-teacher ratio</h3>
+                    <p>
+                        No class exceeds 40 students, so teachers can closely
+                        track each student's academic progress.
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Digitised student records</h3>
+                    <p>
+                        Academic, attendance and contact records can be maintained
+                        centrally by the school administration.
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Boarding School</h3>
+                    <p>
+                        Our boarding environment provides students with a
+                        structured and supportive place to study and develop.
+                    </p>
+                </div>
             </div>
-
-            <div class="stat-item">
-                <span class="stat-label">
-                    Years of operation
-                </span>
-                <span class="stat-num">27</span>
-            </div>
-
         </div>
-
-    </div>
-
-</div>
-
-</section>
-
-
-
-<section class="block">
-
-<div class="container">
-
-    <div class="section-head">
-
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>Why families choose Tumaini</span>
-        </div>
-
-        <h2>
-            Small classes, clear expectations, real accountability.
-        </h2>
-
-    </div>
-
-
-    <div class="program-grid">
-
-        <div class="program-card">
-
-            <h3>
-                Low student-to-teacher ratio
-            </h3>
-
-            <p>
-                No class exceeds 40 students, so teachers can closely
-                track each student's academic progress.
-            </p>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <h3>
-                Digitised student records
-            </h3>
-
-            <p>
-                Academic, attendance and contact records can be maintained
-                centrally by the school administration.
-            </p>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <h3>
-                Boarding School
-            </h3>
-
-            <p>
-                Our boarding environment provides students with a
-                structured and supportive place to study and develop.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
+<!-- ABOUT -->
 <main id="page-about" class="page">
+    <section class="block tint">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>About us</span>
+                </div>
 
-<section class="block tint">
+                <h2>Preparing students for national examinations and beyond.</h2>
+            </div>
 
-<div class="container">
+            <div class="about-grid">
+                <div>
+                    <p>
+                        Tumaini Senior Secondary School is committed to providing
+                        quality secondary education through strong teaching,
+                        discipline and student support.
+                    </p>
 
-    <div class="section-head">
+                    <p>
+                        Our approach focuses on helping students understand what
+                        they learn, develop confidence and prepare effectively
+                        for national examinations.
+                    </p>
 
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>About us</span>
+                    <p>
+                        Every student's academic progress is monitored by teachers
+                        and school administration so that students can receive
+                        appropriate support throughout the academic year.
+                    </p>
+                </div>
+
+                <ul class="value-list">
+                    <li>
+                        <span class="value-num">01</span>
+                        <div>
+                            <strong>Discipline</strong><br>
+                            Clear rules and expectations help maintain a focused
+                            learning environment.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="value-num">02</span>
+                        <div>
+                            <strong>Mentorship</strong><br>
+                            Students receive guidance from teachers throughout
+                            their academic journey.
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="value-num">03</span>
+                        <div>
+                            <strong>Transparency</strong><br>
+                            Parents and guardians can communicate with the school
+                            about student progress.
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <h2>
-            Preparing students for national examinations and beyond.
-        </h2>
-
-    </div>
-
-
-    <div class="about-grid">
-
-        <div>
-
-            <p>
-                Tumaini Senior Secondary School is committed to providing
-                quality secondary education through strong teaching,
-                discipline and student support.
-            </p>
-
-            <p>
-                Our approach focuses on helping students understand what
-                they learn, develop confidence and prepare effectively
-                for national examinations.
-            </p>
-
-            <p>
-                Every student's academic progress is monitored by teachers
-                and school administration so that students can receive
-                appropriate support throughout the academic year.
-            </p>
-
-        </div>
-
-
-        <ul class="value-list">
-
-            <li>
-                <span class="value-num">01</span>
-
-                <div>
-                    <strong>Discipline</strong>
-                    <br>
-                    Clear rules and expectations help maintain a focused
-                    learning environment.
-                </div>
-            </li>
-
-
-            <li>
-                <span class="value-num">02</span>
-
-                <div>
-                    <strong>Mentorship</strong>
-                    <br>
-                    Students receive guidance from teachers throughout
-                    their academic journey.
-                </div>
-            </li>
-
-
-            <li>
-                <span class="value-num">03</span>
-
-                <div>
-                    <strong>Transparency</strong>
-                    <br>
-                    Parents and guardians can communicate with the school
-                    about student progress.
-                </div>
-            </li>
-
-        </ul>
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     ACADEMICS
-========================================================= -->
-
+<!-- ACADEMICS -->
 <main id="page-academics" class="page">
+    <section class="block">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>Academics</span>
+                </div>
 
-<section class="block">
+                <h2>Ordinary and advanced level programmes.</h2>
 
-<div class="container">
+                <p>
+                    Students follow the national curriculum and develop
+                    knowledge and skills in their selected subjects.
+                </p>
+            </div>
 
-    <div class="section-head">
+            <div class="program-grid">
+                <div class="program-card">
+                    <h3>Sciences</h3>
+                    <p>
+                        Physics, Chemistry, Biology and Mathematics,
+                        supported by practical learning.
+                    </p>
+                </div>
 
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>Academics</span>
+                <div class="program-card">
+                    <h3>Business Studies</h3>
+                    <p>
+                        Commerce, Bookkeeping, Economics and related
+                        business subjects.
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Arts and Languages</h3>
+                    <p>
+                        History, Geography, Kiswahili and English Language
+                        combinations.
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <h2>
-            Ordinary and advanced level programmes.
-        </h2>
-
-        <p>
-            Students follow the national curriculum and develop
-            knowledge and skills in their selected subjects.
-        </p>
-
-    </div>
-
-
-    <div class="program-grid">
-
-        <div class="program-card">
-
-            <h3>
-                Sciences
-            </h3>
-
-            <p>
-                Physics, Chemistry, Biology and Mathematics,
-                supported by practical learning.
-            </p>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <h3>
-                Business Studies
-            </h3>
-
-            <p>
-                Commerce, Bookkeeping, Economics and related
-                business subjects.
-            </p>
-
-        </div>
-
-
-        <div class="program-card">
-
-            <h3>
-                Arts and Languages
-            </h3>
-
-            <p>
-                History, Geography, Kiswahili and English Language
-                combinations.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     NOTICES
-========================================================= -->
-
+<!-- NOTICES -->
 <main id="page-notices" class="page">
+    <section class="block tint">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>Notices</span>
+                </div>
 
-<section class="block tint">
+                <h2>School news and calendar updates.</h2>
+            </div>
 
-<div class="container">
+            <div class="notice-list">
+                <div class="notice-item">
+                    <div class="notice-date">04 Sep 2026</div>
 
-    <div class="section-head">
+                    <div>
+                        <span class="tag">Admissions</span>
+                        <h4>Form One intake applications now open</h4>
+                        <p>
+                            Applications for the 2027 Form One intake are now open.
+                            Please contact the school office for admission details.
+                        </p>
+                    </div>
+                </div>
 
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>Notices</span>
+                <div class="notice-item">
+                    <div class="notice-date">28 Aug 2026</div>
+
+                    <div>
+                        <span class="tag">Examinations</span>
+                        <h4>Mid-term examination timetable released</h4>
+                        <p>
+                            Students should check the school notice boards for
+                            the examination timetable.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="notice-item">
+                    <div class="notice-date">15 Aug 2026</div>
+
+                    <div>
+                        <span class="tag">Fees</span>
+                        <h4>Term Three fees deadline</h4>
+                        <p>
+                            Parents and guardians are reminded to complete
+                            school fee payments before the stated deadline.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <h2>
-            School news and calendar updates.
-        </h2>
-
-    </div>
-
-
-    <div class="notice-list">
-
-
-        <div class="notice-item">
-
-            <div class="notice-date">
-                04 Sep 2026
-            </div>
-
-            <div>
-
-                <span class="tag">
-                    Admissions
-                </span>
-
-                <h4>
-                    Form One intake applications now open
-                </h4>
-
-                <p>
-                    Applications for the 2027 Form One intake are now open.
-                    Please contact the school office for admission details.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="notice-item">
-
-            <div class="notice-date">
-                28 Aug 2026
-            </div>
-
-            <div>
-
-                <span class="tag">
-                    Examinations
-                </span>
-
-                <h4>
-                    Mid-term examination timetable released
-                </h4>
-
-                <p>
-                    Students should check the school notice boards for
-                    the examination timetable.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="notice-item">
-
-            <div class="notice-date">
-                15 Aug 2026
-            </div>
-
-            <div>
-
-                <span class="tag">
-                    Fees
-                </span>
-
-                <h4>
-                    Term Three fees deadline
-                </h4>
-
-                <p>
-                    Parents and guardians are reminded to complete
-                    school fee payments before the stated deadline.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     GALLERY
-========================================================= -->
-
+<!-- GALLERY -->
 <main id="page-gallery" class="page">
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>School Life</span>
+                </div>
 
-<section class="gallery-section">
+                <h2>Our School Gallery</h2>
 
-<div class="container">
+                <p>
+                    Explore learning, sports and school-life moments
+                    at Tumaini Senior Secondary School.
+                </p>
+            </div>
 
-    <div class="section-head">
+            <div class="school-gallery">
+                <figure class="gallery-card">
+                    <img src="images (1).jpg" alt="Tumaini school building">
+                    <figcaption>School Campus</figcaption>
+                </figure>
 
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>School Life</span>
+                <figure class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80" alt="Students learning in classroom">
+                    <figcaption>Learning Environment</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="life.jpg" alt="Students and school life">
+                    <figcaption>Students & Campus Life</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80" alt="Teacher with students">
+                    <figcaption>Teachers & Students</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80" alt="Students playing basketball">
+                    <figcaption>Sports Activities</figcaption>
+                </figure>
+
+                <figure class="gallery-card">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80" alt="Students studying">
+                    <figcaption>Academic Excellence</figcaption>
+                </figure>
+            </div>
         </div>
-
-        <h2>
-            Our School Gallery
-        </h2>
-
-        <p>
-            Explore learning, sports and school-life moments
-            at Tumaini Senior Secondary School.
-        </p>
-
-    </div>
-
-
-    <div class="school-gallery">
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="images (1).jpg"
-                alt="Tumaini school building">
-
-            <figcaption>
-                School Campus
-            </figcaption>
-
-        </figure>
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80"
-                alt="Students learning in classroom">
-
-            <figcaption>
-                Learning Environment
-            </figcaption>
-
-        </figure>
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="life.jpg"
-                alt="Students and school life">
-
-            <figcaption>
-                Students & Campus Life
-            </figcaption>
-
-        </figure>
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80"
-                alt="Teacher with students">
-
-            <figcaption>
-                Teachers & Students
-            </figcaption>
-
-        </figure>
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80"
-                alt="Students playing basketball">
-
-            <figcaption>
-                Sports Activities
-            </figcaption>
-
-        </figure>
-
-
-        <figure class="gallery-card">
-
-            <img
-                src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80"
-                alt="Students studying">
-
-            <figcaption>
-                Academic Excellence
-            </figcaption>
-
-        </figure>
-
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
+<!-- CONTACT -->
 <main id="page-contact" class="page">
+    <section class="block">
+        <div class="container">
+            <div class="section-head">
+                <div class="eyebrow-line">
+                    <span class="dash"></span>
+                    <span>Contact</span>
+                </div>
 
-<section class="block">
+                <h2>Reach the school office.</h2>
+            </div>
 
-<div class="container">
+            <div class="contact-grid">
+                <div>
+                    <div class="info-card">
+                        <h4>Address</h4>
+                        <p>
+                            Tumaini Senior Secondary School,
+                            Makuyuni-Arusha, Tanzania
+                        </p>
+                    </div>
 
-    <div class="section-head">
+                    <div class="info-card">
+                        <h4>Phone</h4>
+                        <p>+255 22 000 0000</p>
+                    </div>
 
-        <div class="eyebrow-line">
-            <span class="dash"></span>
-            <span>Contact</span>
+                    <div class="info-card">
+                        <h4>Email</h4>
+                        <p>info@tumainisecondary.sch.tz</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4>Office Hours</h4>
+                        <p>Monday – Friday, 7:30am – 4:30pm</p>
+                    </div>
+                </div>
+
+                <form id="contactForm">
+                    <div class="field">
+                        <label for="cf-name">Full Name</label>
+                        <input id="cf-name" type="text" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" type="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="cf-msg">Message</label>
+                        <textarea id="cf-msg" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                    <p id="contactSent" style="display:none; margin-top:14px; color:var(--green);">
+                        Message sent successfully.
+                    </p>
+                </form>
+            </div>
         </div>
-
-        <h2>
-            Reach the school office.
-        </h2>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-
-        <div>
-
-            <div class="info-card">
-
-                <h4>Address</h4>
-
-                <p>
-                    Tumaini Senior Secondary School,
-                    Makuyuni-Arusha, Tanzania
-                </p>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <h4>Phone</h4>
-
-                <p>
-                    +255 22 000 0000
-                </p>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <h4>Email</h4>
-
-                <p>
-                    info@tumainisecondary.sch.tz
-                </p>
-
-            </div>
-
-
-            <div class="info-card">
-
-                <h4>Office Hours</h4>
-
-                <p>
-                    Monday – Friday, 7:30am – 4:30pm
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <form id="contactForm">
-
-            <div class="field">
-
-                <label for="cf-name">
-                    Full Name
-                </label>
-
-                <input
-                    id="cf-name"
-                    type="text"
-                    required>
-
-            </div>
-
-
-            <div class="field">
-
-                <label for="cf-email">
-                    Email
-                </label>
-
-                <input
-                    id="cf-email"
-                    type="email"
-                    required>
-
-            </div>
-
-
-            <div class="field">
-
-                <label for="cf-msg">
-                    Message
-                </label>
-
-                <textarea
-                    id="cf-msg"
-                    required></textarea>
-
-            </div>
-
-
-            <button
-                type="submit"
-                class="btn btn-primary">
-
-                Send Message
-
-            </button>
-
-
-            <p
-                id="contactSent"
-                style="display:none; margin-top:14px; color:var(--green);">
-
-                Message sent successfully.
-
-            </p>
-
-        </form>
-
-    </div>
-
-</div>
-
-</section>
-
+    </section>
 </main>
 
-
-
-<!-- =========================================================
-     ADMIN
-========================================================= -->
-
+<!-- ADMIN -->
 <main id="page-admin" class="page">
-
-<div class="admin-wrap">
-
-<div class="container">
-
-
-<!-- LOGIN -->
-
-<div id="adminLogin" class="login-card">
-
-    <h2>
-        Administrator Sign In
-    </h2>
-
-    <p class="hint">
-        Staff only. Use the school administrator password.
-    </p>
-
-
-    <form id="loginForm">
-
-        <div class="field">
-
-            <label for="adminPass">
-                Password
-            </label>
-
-            <input
-                id="adminPass"
-                type="password"
-                required>
-
-        </div>
-
-
-        <button
-            type="submit"
-            class="btn btn-primary"
-            style="width:100%;">
-
-            Sign In
-
-        </button>
-
-
-        <p
-            id="loginError"
-            class="login-error">
-
-            Incorrect password. Try again.
-
-        </p>
-
-    </form>
-
-
-    <p class="hint" style="margin-top:18px; margin-bottom:0;">
-
-        Demo password:
-        <strong>tumaini2026</strong>
-
-    </p>
-
-</div>
-
-
-
-<!-- DASHBOARD -->
-
-<div id="adminDash" style="display:none;">
-
-    <div class="dash-top">
-
-        <div>
-
-            <h2 style="color:var(--blue-dark);">
-                Student Records
-            </h2>
-
-            <p style="color:#4d6c7e;">
-                Add, edit and remove student records.
-            </p>
-
-        </div>
-
-
-        <button
-            class="btn btn-ghost"
-            id="logoutBtn">
-
-            Sign Out
-
-        </button>
-
-    </div>
-
-
-
-    <!-- STATS -->
-
-    <div class="dash-stats">
-
-        <div class="dstat">
-            <div class="n" id="statTotal">0</div>
-            <div class="l">Total Students</div>
-        </div>
-
-        <div class="dstat">
-            <div class="n" id="statActive">0</div>
-            <div class="l">Active</div>
-        </div>
-
-        <div class="dstat">
-            <div class="n" id="statGrad">0</div>
-            <div class="l">Graduated</div>
-        </div>
-
-        <div class="dstat">
-            <div class="n" id="statForms">0</div>
-            <div class="l">Forms Represented</div>
-        </div>
-
-    </div>
-
-
-
-    <!-- STUDENT FORM -->
-
-    <div class="panel">
-
-        <h3 id="formTitle">
-            Add a Student
-        </h3>
-
-
-        <form id="studentForm">
-
-            <input
-                type="hidden"
-                id="s-id">
-
-
-            <div class="form-grid">
-
-
-                <div class="field">
-
-                    <label for="s-admno">
-                        Admission Number
-                    </label>
-
-                    <input
-                        id="s-admno"
-                        required>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-name">
-                        Full Name
-                    </label>
-
-                    <input
-                        id="s-name"
-                        required>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-form">
-                        Form / Class
-                    </label>
-
-                    <select id="s-form" required>
-
-                        <option value="">
-                            Select...
-                        </option>
-
-                        <option>Form 1</option>
-                        <option>Form 2</option>
-                        <option>Form 3</option>
-                        <option>Form 4</option>
-                        <option>Form 5</option>
-                        <option>Form 6</option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-gender">
-                        Gender
-                    </label>
-
-                    <select id="s-gender" required>
-
-                        <option value="">
-                            Select...
-                        </option>
-
-                        <option>Female</option>
-                        <option>Male</option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-dob">
-                        Date of Birth
-                    </label>
-
-                    <input
-                        id="s-dob"
-                        type="date">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-contact">
-                        Guardian Phone
-                    </label>
-
-                    <input
-                        id="s-contact"
-                        placeholder="+255 7XX XXX XXX">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-address">
-                        Home Address
-                    </label>
-
-                    <input
-                        id="s-address">
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="s-status">
-                        Status
-                    </label>
-
-                    <select id="s-status">
-
-                        <option>Active</option>
-                        <option>Graduated</option>
-                        <option>Inactive</option>
-
-                    </select>
-
-                </div>
-
+    <div class="admin-wrap">
+        <div class="container">
+
+            <!-- LOGIN -->
+            <div id="adminLogin" class="login-card">
+                <h2>Administrator Sign In</h2>
+
+                <p class="hint">
+                    Staff only. Use the school administrator password.
+                </p>
+
+                <form id="loginForm">
+                    <div class="field">
+                        <label for="adminPass">Password</label>
+                        <input id="adminPass" type="password" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width:100%;">
+                        Sign In
+                    </button>
+
+                    <p id="loginError" class="login-error">
+                        Incorrect password. Try again.
+                    </p>
+                </form>
+
+                <p class="hint" style="margin-top:18px; margin-bottom:0;">
+                    Demo password: <strong>tumaini2026</strong>
+                </p>
             </div>
 
+            <!-- DASHBOARD -->
+            <div id="adminDash" style="display:none;">
+                <div class="dash-top">
+                    <div>
+                        <h2 style="color:var(--blue-dark);">Student Records</h2>
+                        <p style="color:#4d6c7e;">
+                            Add, edit and remove student records.
+                        </p>
+                    </div>
 
-            <div class="form-actions">
+                    <button class="btn btn-ghost" id="logoutBtn">
+                        Sign Out
+                    </button>
+                </div>
 
-                <button
-                    type="submit"
-                    class="btn btn-primary"
-                    id="submitBtn">
+                <!-- STATS -->
+                <div class="dash-stats">
+                    <div class="dstat">
+                        <div class="n" id="statTotal">0</div>
+                        <div class="l">Total Students</div>
+                    </div>
 
-                    Save Student
+                    <div class="dstat">
+                        <div class="n" id="statActive">0</div>
+                        <div class="l">Active</div>
+                    </div>
 
-                </button>
+                    <div class="dstat">
+                        <div class="n" id="statGrad">0</div>
+                        <div class="l">Graduated</div>
+                    </div>
 
+                    <div class="dstat">
+                        <div class="n" id="statForms">0</div>
+                        <div class="l">Forms Represented</div>
+                    </div>
+                </div>
 
-                <button
-                    type="button"
-                    class="btn btn-ghost"
-                    id="cancelEditBtn"
-                    style="display:none;">
+                <!-- STUDENT FORM -->
+                <div class="panel">
+                    <h3 id="formTitle">Add a Student</h3>
 
-                    Cancel Edit
+                    <form id="studentForm">
+                        <input type="hidden" id="s-id">
 
-                </button>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="s-admno">Admission Number</label>
+                                <input id="s-admno" required>
+                            </div>
 
+                            <div class="field">
+                                <label for="s-name">Full Name</label>
+                                <input id="s-name" required>
+                            </div>
+
+                            <div class="field">
+                                <label for="s-form">Form / Class</label>
+                                <select id="s-form" required>
+                                    <option value="">Select...</option>
+                                    <option>Form 1</option>
+                                    <option>Form 2</option>
+                                    <option>Form 3</option>
+                                    <option>Form 4</option>
+                                    <option>Form 5</option>
+                                    <option>Form 6</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="s-gender">Gender</label>
+                                <select id="s-gender" required>
+                                    <option value="">Select...</option>
+                                    <option>Female</option>
+                                    <option>Male</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="s-dob">Date of Birth</label>
+                                <input id="s-dob" type="date">
+                            </div>
+
+                            <div class="field">
+                                <label for="s-contact">Guardian Phone</label>
+                                <input id="s-contact" placeholder="+255 7XX XXX XXX">
+                            </div>
+
+                            <div class="field">
+                                <label for="s-address">Home Address</label>
+                                <input id="s-address">
+                            </div>
+
+                            <div class="field">
+                                <label for="s-status">Status</label>
+                                <select id="s-status">
+                                    <option>Active</option>
+                                    <option>Graduated</option>
+                                    <option>Inactive</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                Save Student
+                            </button>
+
+                            <button type="button" class="btn btn-ghost" id="cancelEditBtn" style="display:none;">
+                                Cancel Edit
+                            </button>
+                        </div>
+
+                        <p id="formMsg" style="display:none; margin-top:10px;"></p>
+                    </form>
+                </div>
+
+                <!-- SEARCH & TABLE -->
+                <div class="panel">
+                    <div class="table-tools">
+                        <h3 style="margin:0;">All Student Records</h3>
+                        <input id="searchInput" placeholder="Search name or admission number">
+                    </div>
+
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Adm. No.</th>
+                                    <th>Name</th>
+                                    <th>Form</th>
+                                    <th>Gender</th>
+                                    <th>Guardian Phone</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="studentTableBody"></tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-
-
-            <p
-                id="formMsg"
-                style="display:none; margin-top:10px;">
-            </p>
-
-        </form>
-
-    </div>
-
-
-
-    <!-- SEARCH -->
-
-    <div class="panel">
-
-        <div class="table-tools">
-
-            <h3 style="margin:0;">
-                All Student Records
-            </h3>
-
-            <input
-                id="searchInput"
-                placeholder="Search name or admission number">
-
         </div>
-
-
-        <div style="overflow-x:auto;">
-
-            <table>
-
-                <thead>
-
-                    <tr>
-
-                        <th>Adm. No.</th>
-                        <th>Name</th>
-                        <th>Form</th>
-                        <th>Gender</th>
-                        <th>Guardian Phone</th>
-                        <th>Status</th>
-                        <th>Action</th>
-
-                    </tr>
-
-                </thead>
-
-
-                <tbody id="studentTableBody"></tbody>
-
-            </table>
-
-        </div>
-
     </div>
-
-
-</div>
-
-</div>
-
-</div>
-
 </main>
 
-
-
-<!-- =========================================================
-     DELETE MODAL
-========================================================= -->
-
-<div
-    class="modal-backdrop"
-    id="confirmModal">
-
+<!-- DELETE MODAL -->
+<div class="modal-backdrop" id="confirmModal">
     <div class="modal">
-
-        <h3>
-            Remove Student Record?
-        </h3>
+        <h3>Remove Student Record?</h3>
 
         <p>
             This will permanently delete the student record.
         </p>
 
-
         <div class="modal-actions">
-
-            <button
-                class="btn btn-ghost"
-                id="confirmCancel">
-
+            <button class="btn btn-ghost" id="confirmCancel">
                 Cancel
-
             </button>
 
-
-            <button
-                class="btn btn-primary"
-                id="confirmDelete"
-                style="background:#b3261e;">
-
+            <button class="btn btn-primary" id="confirmDelete" style="background:#b3261e;">
                 Delete Record
-
             </button>
+        </div>
+    </div>
+</div>
 
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h4>Tumaini Senior Secondary School</h4>
+                <p>
+                    Makuyuni-Arusha, Tanzania.
+                    Form One to Form Six.
+                </p>
+            </div>
+
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#" data-nav="about">About</a></li>
+                    <li><a href="#" data-nav="academics">Academics</a></li>
+                    <li><a href="#" data-nav="notices">Notices</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Office</h4>
+                <ul>
+                    <li><a href="#" data-nav="contact">Contact</a></li>
+                    <li><a href="#" data-nav="admin">Administrator</a></li>
+                </ul>
+            </div>
         </div>
 
+        <div class="footer-bottom">
+            <span>© 2026 Tumaini Senior Secondary School</span>
+            <span>Excellence Through Education</span>
+        </div>
     </div>
-
-</div>
-
-
-
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-
-    <div>
-
-        <h4>
-            Tumaini Senior Secondary School
-        </h4>
-
-        <p>
-            Makuyuni-Arusha, Tanzania.
-            Form One to Form Six.
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <h4>
-            Explore
-        </h4>
-
-        <ul>
-
-            <li>
-                <a href="#" data-nav="about">
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="academics">
-                    Academics
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="notices">
-                    Notices
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-
-
-    <div>
-
-        <h4>
-            Office
-        </h4>
-
-        <ul>
-
-            <li>
-                <a href="#" data-nav="contact">
-                    Contact
-                </a>
-            </li>
-
-            <li>
-                <a href="#" data-nav="admin">
-                    Administrator
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-
-
-</div>
-
-
-<div class="footer-bottom">
-
-    <span>
-        © 2026 Tumaini Senior Secondary School
-    </span>
-
-    <span>
-        Excellence Through Education
-    </span>
-
-</div>
-
-</div>
-
 </footer>
 
-
-
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
+<!-- JAVASCRIPT -->
 <script>
+document.addEventListener("DOMContentLoaded", function() {
 
-document.addEventListener("DOMContentLoaded", function () {
+    /* NAVIGATION */
+    const pages = document.querySelectorAll(".page");
+    const navLinks = document.querySelectorAll("[data-nav]");
+    const nav = document.getElementById("mainNav");
+    const navToggle = document.getElementById("navToggle");
 
+    function showPage(name) {
+        pages.forEach(function(page) {
+            page.classList.toggle("visible", page.id === "page-" + name);
+        });
 
-/* =========================================================
-   NAVIGATION
-========================================================= */
+        navLinks.forEach(function(link) {
+            link.classList.toggle("active", link.dataset.nav === name);
+        });
 
-const pages = document.querySelectorAll(".page");
-const navLinks = document.querySelectorAll("[data-nav]");
-const nav = document.getElementById("mainNav");
-const navToggle = document.getElementById("navToggle");
+        if (nav) {
+            nav.classList.remove("open");
+        }
 
+        if (navToggle) {
+            navToggle.setAttribute("aria-expanded", "false");
+        }
 
-function showPage(name) {
-
-    pages.forEach(function(page) {
-
-        page.classList.toggle(
-            "visible",
-            page.id === "page-" + name
-        );
-
-    });
-
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 
     navLinks.forEach(function(link) {
-
-        link.classList.toggle(
-            "active",
-            link.dataset.nav === name
-        );
-
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            showPage(link.dataset.nav);
+        });
     });
 
-
-    if (nav) {
-        nav.classList.remove("open");
-    }
-
-
+    /* MOBILE MENU */
     if (navToggle) {
-        navToggle.setAttribute(
-            "aria-expanded",
-            "false"
-        );
+        navToggle.addEventListener("click", function() {
+            const opened = nav.classList.toggle("open");
+
+            navToggle.setAttribute(
+                "aria-expanded",
+                String(opened)
+            );
+        });
     }
 
+    /* CONTACT FORM */
+    const contactForm = document.getElementById("contactForm");
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-}
-
-
-navLinks.forEach(function(link) {
-
-    link.addEventListener("click", function(event) {
-
-        event.preventDefault();
-
-        showPage(link.dataset.nav);
-
-    });
-
-});
-
-
-/* =========================================================
-   MOBILE MENU
-========================================================= */
-
-if (navToggle) {
-
-    navToggle.addEventListener("click", function () {
-
-        const opened = nav.classList.toggle("open");
-
-        navToggle.setAttribute(
-            "aria-expanded",
-            String(opened)
-        );
-
-    });
-
-}
-
-
-
-/* =========================================================
-   CONTACT FORM
-========================================================= */
-
-const contactForm =
-    document.getElementById("contactForm");
-
-if (contactForm) {
-
-    contactForm.addEventListener(
-        "submit",
-        function(event) {
-
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
             event.preventDefault();
 
-            const message =
-                document.getElementById("contactSent");
+            const message = document.getElementById("contactSent");
 
             if (message) {
                 message.style.display = "block";
             }
 
             contactForm.reset();
+        });
+    }
 
-        }
-    );
+    /* ADMIN */
+    const loginForm = document.getElementById("loginForm");
+    const loginError = document.getElementById("loginError");
+    const adminLogin = document.getElementById("adminLogin");
+    const adminDash = document.getElementById("adminDash");
+    const logoutBtn = document.getElementById("logoutBtn");
+    const studentForm = document.getElementById("studentForm");
+    const tableBody = document.getElementById("studentTableBody");
+    const searchInput = document.getElementById("searchInput");
 
-}
-
-
-
-/* =========================================================
-   ADMIN
-========================================================= */
-
-const loginForm =
-    document.getElementById("loginForm");
-
-const loginError =
-    document.getElementById("loginError");
-
-const adminLogin =
-    document.getElementById("adminLogin");
-
-const adminDash =
-    document.getElementById("adminDash");
-
-const logoutBtn =
-    document.getElementById("logoutBtn");
-
-const studentForm =
-    document.getElementById("studentForm");
-
-const tableBody =
-    document.getElementById("studentTableBody");
-
-const searchInput =
-    document.getElementById("searchInput");
-
-let students =
-    JSON.parse(
+    let students = JSON.parse(
         localStorage.getItem("tumainiStudents") || "[]"
     );
 
-let editingId = null;
+    let editingId = null;
+    let deleteId = null;
 
-let deleteId = null;
-
-
-
-/* =========================================================
-   SAVE DATA
-========================================================= */
-
-function saveStudents() {
-
-    localStorage.setItem(
-        "tumainiStudents",
-        JSON.stringify(students)
-    );
-
-}
-
-
-
-/* =========================================================
-   STATISTICS
-========================================================= */
-
-function updateStats() {
-
-    document.getElementById("statTotal").textContent =
-        students.length;
-
-    document.getElementById("statActive").textContent =
-        students.filter(
-            student => student.status === "Active"
-        ).length;
-
-    document.getElementById("statGrad").textContent =
-        students.filter(
-            student => student.status === "Graduated"
-        ).length;
-
-    document.getElementById("statForms").textContent =
-        new Set(
-            students
-                .map(student => student.form)
-                .filter(Boolean)
-        ).size;
-
-}
-
-
-
-/* =========================================================
-   SECURITY AGAINST HTML INJECTION
-========================================================= */
-
-function escapeHtml(value) {
-
-    return String(value ?? "").replace(
-        /[&<>"']/g,
-        function(character) {
-
-            return {
-
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#039;"
-
-            }[character];
-
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   DISPLAY STUDENTS
-========================================================= */
-
-function renderStudents(filter = "") {
-
-    const query =
-        filter.trim().toLowerCase();
-
-
-    const rows =
-        students.filter(function(student) {
-
-            return (
-                !query ||
-                student.name
-                    .toLowerCase()
-                    .includes(query) ||
-
-                student.admno
-                    .toLowerCase()
-                    .includes(query)
-            );
-
-        });
-
-
-    if (!rows.length) {
-
-        tableBody.innerHTML = `
-            <tr class="empty-row">
-                <td colspan="7">
-                    No student records found.
-                </td>
-            </tr>
-        `;
-
-        updateStats();
-
-        return;
+    /* SAVE DATA */
+    function saveStudents() {
+        localStorage.setItem(
+            "tumainiStudents",
+            JSON.stringify(students)
+        );
     }
 
+    /* STATISTICS */
+    function updateStats() {
+        document.getElementById("statTotal").textContent = students.length;
 
-    tableBody.innerHTML =
-        rows.map(function(student) {
+        document.getElementById("statActive").textContent =
+            students.filter(function(student) {
+                return student.status === "Active";
+            }).length;
 
+        document.getElementById("statGrad").textContent =
+            students.filter(function(student) {
+                return student.status === "Graduated";
+            }).length;
+
+        document.getElementById("statForms").textContent =
+            new Set(
+                students
+                    .map(function(student) {
+                        return student.form;
+                    })
+                    .filter(Boolean)
+            ).size;
+    }
+
+    /* SECURITY */
+    function escapeHtml(value) {
+        return String(value ?? "").replace(
+            /[&<>"']/g,
+            function(character) {
+                return {
+                    "&": "&amp;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    '"': "&quot;",
+                    "'": "&#039;"
+                }[character];
+            }
+        );
+    }
+
+    /* DISPLAY STUDENTS */
+    function renderStudents(filter = "") {
+        const query = filter.trim().toLowerCase();
+
+        const rows = students.filter(function(student) {
+            return (
+                !query ||
+                student.name.toLowerCase().includes(query) ||
+                student.admno.toLowerCase().includes(query)
+            );
+        });
+
+        if (!rows.length) {
+            tableBody.innerHTML = `
+                <tr class="empty-row">
+                    <td colspan="7">No student records found.</td>
+                </tr>
+            `;
+
+            updateStats();
+            return;
+        }
+
+        tableBody.innerHTML = rows.map(function(student) {
             const statusClass =
-                "status-" +
-                student.status.toLowerCase();
-
+                "status-" + student.status.toLowerCase();
 
             return `
-
                 <tr>
-
+                    <td>${escapeHtml(student.admno)}</td>
+                    <td>${escapeHtml(student.name)}</td>
+                    <td>${escapeHtml(student.form)}</td>
+                    <td>${escapeHtml(student.gender)}</td>
+                    <td>${escapeHtml(student.contact || "-")}</td>
                     <td>
-                        ${escapeHtml(student.admno)}
-                    </td>
-
-                    <td>
-                        ${escapeHtml(student.name)}
-                    </td>
-
-                    <td>
-                        ${escapeHtml(student.form)}
-                    </td>
-
-                    <td>
-                        ${escapeHtml(student.gender)}
-                    </td>
-
-                    <td>
-                        ${escapeHtml(
-                            student.contact || "-"
-                        )}
-                    </td>
-
-                    <td>
-
-                        <span
-                            class="status-pill ${statusClass}">
-
-                            ${escapeHtml(
-                                student.status
-                            )}
-
+                        <span class="status-pill ${statusClass}">
+                            ${escapeHtml(student.status)}
                         </span>
-
                     </td>
-
                     <td>
-
                         <button
                             type="button"
                             class="row-btn edit"
                             data-edit="${student.id}">
-
                             Edit
-
                         </button>
-
 
                         <button
                             type="button"
                             class="row-btn del"
                             data-delete="${student.id}">
-
                             Delete
-
                         </button>
-
                     </td>
-
                 </tr>
-
             `;
-
         }).join("");
 
+        updateStats();
+    }
 
-    updateStats();
+    /* RESET FORM */
+    function resetStudentForm() {
+        studentForm.reset();
 
-}
+        document.getElementById("s-id").value = "";
 
+        document.getElementById("formTitle").textContent =
+            "Add a Student";
 
+        document.getElementById("submitBtn").textContent =
+            "Save Student";
 
-/* =========================================================
-   RESET STUDENT FORM
-========================================================= */
+        document.getElementById("cancelEditBtn").style.display =
+            "none";
 
-function resetStudentForm() {
+        editingId = null;
+    }
 
-    studentForm.reset();
+    /* FORM MESSAGE */
+    function showFormMessage(text, type) {
+        const msg = document.getElementById("formMsg");
 
-    document.getElementById("s-id").value = "";
+        msg.textContent = text;
+        msg.style.display = "block";
+        msg.style.color =
+            type === "ok" ? "#1e7a35" : "#b3261e";
 
-    document.getElementById("formTitle").textContent =
-        "Add a Student";
+        setTimeout(function() {
+            msg.style.display = "none";
+        }, 3000);
+    }
 
-    document.getElementById("submitBtn").textContent =
-        "Save Student";
-
-    document.getElementById("cancelEditBtn").style.display =
-        "none";
-
-    editingId = null;
-
-}
-
-
-
-/* =========================================================
-   FORM MESSAGE
-========================================================= */
-
-function showFormMessage(text, type) {
-
-    const msg =
-        document.getElementById("formMsg");
-
-    msg.textContent = text;
-
-    msg.style.display = "block";
-
-    msg.style.color =
-        type === "ok"
-        ? "#1e7a35"
-        : "#b3261e";
-
-    setTimeout(function() {
-
-        msg.style.display = "none";
-
-    }, 3000);
-
-}
-
-
-
-/* =========================================================
-   LOGIN
-========================================================= */
-
-if (loginForm) {
-
-    loginForm.addEventListener(
-        "submit",
-        function(event) {
-
+    /* LOGIN */
+    if (loginForm) {
+        loginForm.addEventListener("submit", function(event) {
             event.preventDefault();
-
 
             const password =
                 document.getElementById("adminPass").value;
 
-
             if (password === "tumaini2026") {
-
                 adminLogin.style.display = "none";
-
                 adminDash.style.display = "block";
-
                 loginError.style.display = "none";
 
-                document.getElementById(
-                    "adminPass"
-                ).value = "";
+                document.getElementById("adminPass").value = "";
 
                 renderStudents();
-
             } else {
-
                 loginError.style.display = "block";
-
             }
+        });
+    }
 
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   LOGOUT
-========================================================= */
-
-if (logoutBtn) {
-
-    logoutBtn.addEventListener(
-        "click",
-        function() {
-
+    /* LOGOUT */
+    if (logoutBtn) {
+        logoutBtn.addEventListener("click", function() {
             adminDash.style.display = "none";
-
             adminLogin.style.display = "block";
-
             resetStudentForm();
+        });
+    }
 
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   ADD / EDIT STUDENT
-========================================================= */
-
-if (studentForm) {
-
-    studentForm.addEventListener(
-        "submit",
-        function(event) {
-
+    /* ADD / EDIT STUDENT */
+    if (studentForm) {
+        studentForm.addEventListener("submit", function(event) {
             event.preventDefault();
 
-
             const record = {
+                id: editingId || Date.now().toString(),
 
-                id:
-                    editingId ||
-                    Date.now().toString(),
+                admno: document
+                    .getElementById("s-admno")
+                    .value
+                    .trim(),
 
-                admno:
-                    document
-                        .getElementById("s-admno")
-                        .value
-                        .trim(),
+                name: document
+                    .getElementById("s-name")
+                    .value
+                    .trim(),
 
-                name:
-                    document
-                        .getElementById("s-name")
-                        .value
-                        .trim(),
+                form: document
+                    .getElementById("s-form")
+                    .value,
 
-                form:
-                    document
-                        .getElementById("s-form")
-                        .value,
+                gender: document
+                    .getElementById("s-gender")
+                    .value,
 
-                gender:
-                    document
-                        .getElementById("s-gender")
-                        .value,
+                dob: document
+                    .getElementById("s-dob")
+                    .value,
 
-                dob:
-                    document
-                        .getElementById("s-dob")
-                        .value,
+                contact: document
+                    .getElementById("s-contact")
+                    .value
+                    .trim(),
 
-                contact:
-                    document
-                        .getElementById("s-contact")
-                        .value
-                        .trim(),
+                address: document
+                    .getElementById("s-address")
+                    .value
+                    .trim(),
 
-                address:
-                    document
-                        .getElementById("s-address")
-                        .value
-                        .trim(),
-
-                status:
-                    document
-                        .getElementById("s-status")
-                        .value
-
+                status: document
+                    .getElementById("s-status")
+                    .value
             };
 
-
-            const duplicate =
-                students.some(function(student) {
-
-                    return (
-                        student.admno.toLowerCase() ===
-                        record.admno.toLowerCase() &&
-                        student.id !== record.id
-                    );
-
-                });
-
+            const duplicate = students.some(function(student) {
+                return (
+                    student.admno.toLowerCase() ===
+                    record.admno.toLowerCase() &&
+                    student.id !== record.id
+                );
+            });
 
             if (duplicate) {
-
                 showFormMessage(
                     "Admission number already exists.",
                     "err"
                 );
-
                 return;
-
             }
 
-
             if (editingId) {
-
-                students =
-                    students.map(function(student) {
-
-                        return student.id === editingId
-                            ? record
-                            : student;
-
-                    });
+                students = students.map(function(student) {
+                    return student.id === editingId
+                        ? record
+                        : student;
+                });
 
                 showFormMessage(
                     "Student updated successfully.",
                     "ok"
                 );
-
             } else {
-
                 students.push(record);
 
                 showFormMessage(
                     "Student saved successfully.",
                     "ok"
                 );
-
             }
-
 
             saveStudents();
 
-            renderStudents(
-                searchInput.value
-            );
+            renderStudents(searchInput.value);
 
             resetStudentForm();
+        });
+    }
 
-        }
-    );
+    /* CANCEL EDIT */
+    const cancelEditBtn =
+        document.getElementById("cancelEditBtn");
 
-}
+    if (cancelEditBtn) {
+        cancelEditBtn.addEventListener(
+            "click",
+            resetStudentForm
+        );
+    }
 
-
-
-/* =========================================================
-   CANCEL EDIT
-========================================================= */
-
-const cancelEditBtn =
-    document.getElementById("cancelEditBtn");
-
-if (cancelEditBtn) {
-
-    cancelEditBtn.addEventListener(
-        "click",
-        resetStudentForm
-    );
-
-}
-
-
-
-/* =========================================================
-   EDIT / DELETE BUTTONS
-========================================================= */
-
-if (tableBody) {
-
-    tableBody.addEventListener(
-        "click",
-        function(event) {
-
+    /* EDIT / DELETE */
+    if (tableBody) {
+        tableBody.addEventListener("click", function(event) {
 
             const editButton =
                 event.target.closest("[data-edit]");
 
-
             const deleteButton =
                 event.target.closest("[data-delete]");
 
-
             /* EDIT */
-
             if (editButton) {
-
-                const student =
-                    students.find(
-                        student =>
-                            student.id ===
-                            editButton.dataset.edit
-                    );
-
+                const student = students.find(
+                    function(student) {
+                        return student.id === editButton.dataset.edit;
+                    }
+                );
 
                 if (!student) {
                     return;
                 }
 
-
-                editingId =
-                    student.id;
-
+                editingId = student.id;
 
                 document.getElementById("s-id").value =
                     student.id;
@@ -3056,7 +1998,6 @@ if (tableBody) {
                 document.getElementById("s-status").value =
                     student.status;
 
-
                 document.getElementById("formTitle").textContent =
                     "Edit Student";
 
@@ -3066,124 +2007,65 @@ if (tableBody) {
                 document.getElementById("cancelEditBtn").style.display =
                     "inline-block";
 
-
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth"
                 });
-
             }
 
-
-
             /* DELETE */
-
             if (deleteButton) {
-
-                deleteId =
-                    deleteButton.dataset.delete;
+                deleteId = deleteButton.dataset.delete;
 
                 document
                     .getElementById("confirmModal")
                     .classList.add("open");
-
             }
+        });
+    }
 
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   CANCEL DELETE
-========================================================= */
-
-document
-    .getElementById("confirmCancel")
-    ?.addEventListener(
-        "click",
-        function() {
-
+    /* CANCEL DELETE */
+    document
+        .getElementById("confirmCancel")
+        ?.addEventListener("click", function() {
             deleteId = null;
 
             document
                 .getElementById("confirmModal")
                 .classList.remove("open");
+        });
 
-        }
-    );
-
-
-
-/* =========================================================
-   CONFIRM DELETE
-========================================================= */
-
-document
-    .getElementById("confirmDelete")
-    ?.addEventListener(
-        "click",
-        function() {
+    /* CONFIRM DELETE */
+    document
+        .getElementById("confirmDelete")
+        ?.addEventListener("click", function() {
 
             if (deleteId) {
-
-                students =
-                    students.filter(
-                        student =>
-                            student.id !== deleteId
-                    );
+                students = students.filter(function(student) {
+                    return student.id !== deleteId;
+                });
 
                 saveStudents();
-
-                renderStudents(
-                    searchInput.value
-                );
-
+                renderStudents(searchInput.value);
             }
-
 
             deleteId = null;
 
             document
                 .getElementById("confirmModal")
                 .classList.remove("open");
+        });
 
-        }
-    );
+    /* SEARCH */
+    if (searchInput) {
+        searchInput.addEventListener("input", function() {
+            renderStudents(searchInput.value);
+        });
+    }
 
-
-
-/* =========================================================
-   SEARCH
-========================================================= */
-
-if (searchInput) {
-
-    searchInput.addEventListener(
-        "input",
-        function() {
-
-            renderStudents(
-                searchInput.value
-            );
-
-        }
-    );
-
-}
-
-
-
-/* =========================================================
-   INITIAL LOAD
-========================================================= */
-
-renderStudents();
-
+    /* INITIAL LOAD */
+    renderStudents();
 });
-
 </script>
 
 </body>
